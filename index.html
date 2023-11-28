@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="screen">
+            <input type="text" id="display" value=""></input>
+        </div>
+        <div id="keyboard">
+            <div class="row">
+                <input type="button" id="clear" class="action" value="C"></input>
+                <input type="button" id="inverse" class="action" value="+/-" onclick="inverse()"></input>
+                <input type="button" id="percent" class="action" value="%" onclick="percent()"></input>
+                <input type="button" id="divide" class="operation" value="/" onclick="insert(value)"></input>
+            </div>
+            <div class="row">
+                <input type="button" id="n7" class="number" value="7" onclick="insert(value)"></input>
+                <input type="button" id="n8" class="number" value="8" onclick="insert(value)"></input>
+                <input type="button" id="n9" class="number" value="9" onclick="insert(value)"></input>
+                <input type="button" id="multiply" class="operation" value="*" onclick="insert(value)"></input>
+            </div>
+            <div class="row">
+                <input type="button" id="n4" class="number" value="4" onclick="insert(value)"></input>
+                <input type="button" id="n5" class="number" value="5" onclick="insert(value)"></input>
+                <input type="button" id="n6" class="number" value="6" onclick="insert(value)"></input>
+                <input type="button" id="substract" class="operation" value="-" onclick="insert(value)"></input>
+            </div>
+            <div class="row">
+                <input type="button" id="n1" class="number" value="1" onclick="insert(value)"></input>
+                <input type="button" id="n2" class="number" value="2" onclick="insert(value)"></input>
+                <input type="button" id="n3" class="number" value="3" onclick="insert(value)"></input>
+                <input type="button" id="add" class="operation" value="+" onclick="insert(value)"></input>
+            </div>
+            <div class="row">
+                <input type="button" id="n0" class="number" value="0" onclick="insert(value)"></input>
+                <input type="button" id="comma" class="number" value="." onclick="insert(value)"></input>
+                <input type="button" id="equals" class="operation" value="=" onclick="calculate()"></input>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
